@@ -7,12 +7,13 @@
     --text-light-gray:#aaa;
     --star-yellon: #ffbb3a;
 }
-
-
-* {
+*{
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -56,7 +57,7 @@ a,a:hover{
     
 }
 #dsmovie-card-list{
-    padding: 40px 10px;
+    padding: 0 10px;
 }
 .dsmovie-card img{
     width: 100%;
@@ -152,3 +153,44 @@ a,a:hover{
     align-items: center;
     justify-content: space-between;
 }
+.dsmovie-pagination-container{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.dsmovie-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+.dsmovie-pagination-box button{
+    width: 40px;
+    left: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsmovie-pagination-box button img{
+   filter: brightness(0) saturate(100%) invert(23%) sepia(37%) saturate(4592%) hue-rotate(239deg) brightness(91%) contrast(88%);
+}
+.dsmovie-pagination-box buttom:disabled{
+    border: 1px solid var(--text-light-gray);
+}
+.dsmovie-pagination-box buttom:disabled img{
+ filter: unset; 
+}
+.dsmovie-flip-horizontal{
+    transform: rotate(180deg);
+}
+
+
